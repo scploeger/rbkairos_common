@@ -47,7 +47,7 @@
         <xacro:ur5_robot prefix="$(arg prefix)arm_" joint_limited="true"
           shoulder_pan_lower_limit="${-pi}" shoulder_pan_upper_limit="${pi}"
           wrist_3_lower_limit="${-pi}" wrist_3_upper_limit="${pi}"
-          kinematics_file="${load_yaml('$(find rbkairos_control)/config/ur5_calibration.yaml')}">
+	  kinematics_file="${load_yaml('$(find rbkairos_control)/config/ur5_calibration.yaml')}">
         </xacro:ur5_robot>
 
         <joint name="$(arg prefix)arm_base_joint" type="fixed">
